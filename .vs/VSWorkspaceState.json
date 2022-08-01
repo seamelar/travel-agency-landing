@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\img",
     "\\sass",
     "\\sass\\base",
     "\\sass\\blocks"
   ],
-  "SelectedNode": "\\sass\\base\\_base.scss",
+  "SelectedNode": "\\sass\\main.scss",
   "PreviewInSolutionExplorer": false
 }
