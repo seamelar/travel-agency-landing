@@ -179,14 +179,14 @@ body {
     color: #006270;
     padding-top: 20px; }
 
-.intro__content {
+.intro__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 720px;
   margin-top: 80px; }
-  .intro__content .button {
+  .intro__inner .button {
     margin-left: 0;
     margin-top: 40px; }
 
