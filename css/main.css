@@ -190,4 +190,48 @@ body {
     margin-left: 0;
     margin-top: 40px; }
 
+.tabs {
+  width: 100%;
+  filter: drop-shadow(0px 14px 34px rgba(0, 0, 0, 0.2)); }
+
+.tabs > input[type="radio"] {
+  display: none; }
+
+.tabs > div {
+  display: none;
+  padding: 10px 15px;
+  font-size: 16px; }
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+  display: block;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.tabs > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px; }
+
+.tabs > label:not(:first-of-type) {
+  border-left: none; }
+
+.tabs > input[type="radio"]:checked + label {
+  background-color: #fff;
+  opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */
