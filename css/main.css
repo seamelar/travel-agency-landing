@@ -193,6 +193,12 @@ body {
 .tabs {
   width: 100%;
   filter: drop-shadow(0px 14px 34px rgba(0, 0, 0, 0.2)); }
+  .tabs .button {
+    margin-left: 20px;
+    background: #00E0C7;
+    margin-top: 37px;
+    height: 50px;
+    border: none; }
 
 .tabs > input[type="radio"] {
   display: none; }
@@ -209,7 +215,9 @@ body {
   background-color: #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-wrap: wrap; }
 
 .tabs > label {
   display: inline-block;
@@ -233,5 +241,37 @@ body {
 .tabs > input[type="radio"]:checked + label {
   background-color: #fff;
   opacity: 1; }
+
+/*Datepicker*/
+.form {
+  margin: 0 20px; }
+  .form [type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat; }
+  .form [type="date"]::-webkit-inner-spin-button {
+    display: none; }
+  .form [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; }
+  .form label {
+    display: block;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #009394;
+    margin-bottom: 5px; }
+  .form input {
+    border: 1px solid #2A3950;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 10px;
+    width: 230px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 125%;
+    color: #2A3950;
+    height: 50px; }
 
 /*# sourceMappingURL=main.css.map */
