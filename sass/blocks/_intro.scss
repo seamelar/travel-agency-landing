@@ -43,11 +43,10 @@
 
 
     .button {
-        margin-left: 20px;
+        margin: 77px 20px 0 20px;
         background: #00E0C7;
-        margin-top: 37px;
         height: 50px;
-        border:none;
+        border: none;
     }
 }
 
@@ -62,13 +61,13 @@
 #tab-btn-1:checked ~ #content-1,
 #tab-btn-2:checked ~ #content-2,
 #tab-btn-3:checked ~ #content-3 {
-    display: block;
     background-color: #fff;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .tabs > label {
     display: inline-block;
@@ -78,15 +77,15 @@
     background-color: #fff;
     opacity: 0.9;
     border-radius: 10px 10px 0px 0px;
-    padding: 11px 44px;
+    padding: 23px 73px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
     cursor: pointer;
     position: relative;
     top: 1px;
     font-family: 'Segoe UI';
-    font-style: normal;
-    font-size: 27px;
-    line-height: 27px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
     color: #2A3950;
 }
 
@@ -101,7 +100,7 @@
 
 /*Datepicker*/
 .form {
-    margin: 0 20px;
+    margin: 40px 20px;
 
     [type="date"] {
         background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;

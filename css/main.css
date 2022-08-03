@@ -89,6 +89,8 @@ body {
   font-family: 'Segoe UI';
   user-select: none;
   z-index: 999; }
+  .nav .button {
+    margin-left: 50px; }
 
 .navbar {
   display: flex;
@@ -147,8 +149,7 @@ body {
   background: #2A3950;
   border: 2px solid #FFFFFF;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-left: 50px; }
+  border-radius: 8px; }
   .button span {
     color: #FFFFFF;
     font-family: 'Segoe UI';
@@ -194,9 +195,8 @@ body {
   width: 100%;
   filter: drop-shadow(0px 14px 34px rgba(0, 0, 0, 0.2)); }
   .tabs .button {
-    margin-left: 20px;
+    margin: 77px 20px 0 20px;
     background: #00E0C7;
-    margin-top: 37px;
     height: 50px;
     border: none; }
 
@@ -211,13 +211,13 @@ body {
 #tab-btn-1:checked ~ #content-1,
 #tab-btn-2:checked ~ #content-2,
 #tab-btn-3:checked ~ #content-3 {
-  display: block;
   background-color: #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .tabs > label {
   display: inline-block;
@@ -227,15 +227,15 @@ body {
   background-color: #fff;
   opacity: 0.9;
   border-radius: 10px 10px 0px 0px;
-  padding: 11px 44px;
+  padding: 23px 73px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   cursor: pointer;
   position: relative;
   top: 1px;
   font-family: 'Segoe UI';
-  font-style: normal;
-  font-size: 27px;
-  line-height: 27px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
   color: #2A3950; }
 
 .tabs > label:not(:first-of-type) {
@@ -247,7 +247,7 @@ body {
 
 /*Datepicker*/
 .form {
-  margin: 0 20px; }
+  margin: 40px 20px; }
   .form [type="date"] {
     background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat; }
   .form [type="date"]::-webkit-inner-spin-button {
@@ -279,7 +279,106 @@ body {
 
 .about {
   width: 100%;
-  height: 100vh;
   background-color: #2a3950; }
+  .about .about__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 680px;
+    align-items: center;
+    column-gap: 50px; }
+  .about .button {
+    background: #00E0C7;
+    height: 50px;
+    margin-top: 50px;
+    width: fit-content; }
+  .about .about__text {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column; }
+    .about .about__text .about__slogan {
+      font-family: 'Denk One';
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 62px;
+      text-transform: capitalize;
+      opacity: 0.7; }
+    .about .about__text .about__title {
+      font-family: 'DM Serif Display';
+      font-weight: 400;
+      font-size: 62px;
+      line-height: 112%;
+      text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25); }
+    .about .about__text .about__desc {
+      font-family: 'Segoe UI';
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      opacity: 0.7; }
+
+.checkbox {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block; }
+
+.checkbox input[type="checkbox"] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px; }
+
+.checkbox label {
+  position: relative; }
+
+.checkbox label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid #7bbe72; }
+
+.checkbox label:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #7bbe72;
+  border-left: 2px solid #7bbe72;
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px; }
+
+.checkbox input[type="checkbox"]:checked ~ label::before {
+  color: #7bbe72; }
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1); }
+
+.checkbox label {
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub; }
+
+.checkbox label span {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: 0; }
 
 /*# sourceMappingURL=main.css.map */
