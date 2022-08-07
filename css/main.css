@@ -283,8 +283,9 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     min-height: 680px;
-    align-items: center;
-    column-gap: 50px; }
+    align-items: center; }
+  .about .about__img {
+    padding-right: 25px; }
   .about .button {
     background: #00E0C7;
     height: 50px;
@@ -293,7 +294,8 @@ body {
   .about .about__text {
     color: #FFFFFF;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-left: 25px; }
     .about .about__text .about__slogan {
       font-family: 'Denk One';
       font-weight: 400;
@@ -301,12 +303,6 @@ body {
       line-height: 62px;
       text-transform: capitalize;
       opacity: 0.7; }
-    .about .about__text .about__title {
-      font-family: 'DM Serif Display';
-      font-weight: 400;
-      font-size: 62px;
-      line-height: 112%;
-      text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25); }
     .about .about__text .about__desc {
       font-family: 'Segoe UI';
       font-weight: 600;
@@ -314,70 +310,59 @@ body {
       line-height: 27px;
       opacity: 0.7; }
 
-.checkbox {
+.title {
+  font-family: 'DM Serif Display';
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+  padding: 100px 0 15px 0; }
+
+.suptitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 100px; }
+
+.offers {
   width: 100%;
-  margin: 15px auto;
-  position: relative;
-  display: block; }
-
-.checkbox input[type="checkbox"] {
-  width: auto;
-  opacity: 0.00000001;
-  position: absolute;
-  left: 0;
-  margin-left: -20px; }
-
-.checkbox label {
-  position: relative; }
-
-.checkbox label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 4px;
-  width: 22px;
-  height: 22px;
-  transition: transform 0.28s ease;
-  border-radius: 3px;
-  border: 2px solid #7bbe72; }
-
-.checkbox label:after {
-  content: '';
-  display: block;
-  width: 10px;
-  height: 5px;
-  border-bottom: 2px solid #7bbe72;
-  border-left: 2px solid #7bbe72;
-  -webkit-transform: rotate(-45deg) scale(0);
-  transform: rotate(-45deg) scale(0);
-  transition: transform ease 0.25s;
-  will-change: transform;
-  position: absolute;
-  top: 12px;
-  left: 10px; }
-
-.checkbox input[type="checkbox"]:checked ~ label::before {
-  color: #7bbe72; }
-
-.checkbox input[type="checkbox"]:checked ~ label::after {
-  -webkit-transform: rotate(-45deg) scale(1);
-  transform: rotate(-45deg) scale(1); }
-
-.checkbox label {
-  min-height: 34px;
-  display: block;
-  padding-left: 40px;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-  vertical-align: sub; }
-
-.checkbox label span {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.checkbox input[type="checkbox"]:focus + label::before {
-  outline: 0; }
+  background-color: #214056; }
+  .offers .offers__map {
+    position: relative;
+    padding-bottom: 100px; }
+    .offers .offers__map .offers__pin1 {
+      position: absolute;
+      left: 25%;
+      bottom: 35%; }
+    .offers .offers__map .offers__pin2 {
+      position: absolute;
+      left: 50%;
+      top: 0%; }
+    .offers .offers__map .offers__pin3 {
+      position: absolute;
+      left: 85%;
+      bottom: 35%; }
+  .offers .offers__card {
+    background: #FFFFFF;
+    box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px; }
+  .offers .offers__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #2A3950; }
+  .offers .offers__suptitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    color: #006270; }
 
 /*# sourceMappingURL=main.css.map */
