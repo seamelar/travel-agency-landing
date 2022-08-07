@@ -312,23 +312,21 @@ body {
 
 .title {
   font-family: 'DM Serif Display';
-  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 62px;
   line-height: 112%;
   color: #FFFFFF;
   text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
-  padding: 100px 0 15px 0; }
+  padding: 10px 0 15px 0; }
 
 .suptitle {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  text-align: center;
   color: #FFFFFF;
   opacity: 0.7;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 .offers {
   width: 100%;
@@ -347,13 +345,29 @@ body {
     .offers .offers__map .offers__pin3 {
       position: absolute;
       left: 85%;
-      bottom: 35%; }
+      bottom: 30%; }
   .offers .offers__card {
     background: #FFFFFF;
     box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     width: fit-content;
-    padding: 20px; }
+    padding: 20px;
+    position: absolute; }
+    .offers .offers__card .offers__img {
+      border: 2px solid #FFFFFF;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      width: 310px;
+      height: 180px; }
+  .offers .rome {
+    top: -10%;
+    left: 0; }
+  .offers .paris {
+    bottom: 0;
+    left: 35%; }
+  .offers .maldives {
+    top: -15%;
+    right: 0; }
   .offers .offers__title {
     font-weight: 600;
     font-size: 24px;
@@ -364,5 +378,11 @@ body {
     font-size: 18px;
     line-height: 125%;
     color: #006270; }
+  .offers .title {
+    text-align: center;
+    padding: 100px 0 15px 0; }
+  .offers .suptitle {
+    text-align: center;
+    margin-bottom: 130px; }
 
 /*# sourceMappingURL=main.css.map */
