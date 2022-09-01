@@ -332,7 +332,7 @@ body {
   background-color: #214056; }
   .offers .offers__map {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 150px; }
     .offers .offers__map .offers__pin1 {
       position: absolute;
       left: 25%;
@@ -362,7 +362,7 @@ body {
     top: -10%;
     left: 5%; }
   .offers .paris {
-    bottom: 0;
+    bottom: 15%;
     left: 35%; }
   .offers .maldives {
     top: -15%;
@@ -416,7 +416,7 @@ body {
   color: inherit; }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: #ffffff;
   font-size: 14px;
   font-weight: normal;
   margin: 0; }
@@ -476,7 +476,7 @@ body {
 
 .footer-distributed .footer-company-about {
   line-height: 20px;
-  color: #92999f;
+  color: #ffffff;
   font-size: 13px;
   font-weight: normal;
   margin: 0; }
